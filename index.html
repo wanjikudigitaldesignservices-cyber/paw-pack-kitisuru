@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>PAW PACK KITISURU | Premium Dog Daycare & Boarding</title>
+    <meta name="description" content="Nairobi's most trusted premium dog daycare and boarding facility located in Kitisuru. Give your furry best friend a fun, safe, and engaging environment.">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar"><div class="nav-container">
+        <a href="#home" class="nav-logo">🐾 Paw<span>Pack</span></a>
+        <ul class="nav-links" id="navLinks"><li><a href="#home" class="nav-link active">Home</a></li><li><a href="#about" class="nav-link">About Us</a></li><li><a href="#services" class="nav-link">Services</a></li><li><a href="#booking" class="nav-link">Book Now</a></li></ul>
+        <a href="#booking" class="nav-cta">Join the Pack</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div></nav>
+
+    <header id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Kitisuru, Nairobi</span>
+            <h1>A Pawsome Place<br>For Your <span class="accent">Best Friend!</span></h1>
+            <p class="hero-sub">Premium daycare, luxury boarding, and professional grooming. We treat your pets like family because they are.</p>
+            <div class="hero-actions">
+                <a href="#services" class="btn btn-primary">See Our Services</a>
+                <a href="#booking" class="btn btn-outline">Book a Playdate</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section split-section">
+        <div class="container"><div class="split-grid">
+            <div class="split-img">Happy Dogs</div>
+            <div class="split-content">
+                <span class="tag">Why Choose Us</span>
+                <h2>Safe, Fun & Cage-Free</h2>
+                <p>At Paw Pack Kitisuru, we understand that dogs need socialization, exercise, and a whole lot of love. Our expansive outdoor play yards and cozy indoor lounges are designed specifically for canine comfort and safety.</p>
+                <div class="features">
+                    <div class="feat">
+                        <div class="feat-icon">🎾</div>
+                        <div><h4>Structured Play</h4><p>Supervised group activities categorized by size and energy level.</p></div>
+                    </div>
+                    <div class="feat">
+                        <div class="feat-icon">🩺</div>
+                        <div><h4>Trained Staff</h4><p>Our pack leaders are trained in pet CPR and behavioral management.</p></div>
+                    </div>
+                    <div class="feat">
+                        <div class="feat-icon">🎥</div>
+                        <div><h4>Webcam Access</h4><p>Check in on your pup any time with our live HD facility webcams.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header"><h2>Our Services</h2><p>Everything your dog needs for a happy, healthy life.</p></div>
+            <div class="svc-grid">
+                <div class="svc-card">
+                    <div class="svc-icon">☀️</div>
+                    <h3>Doggie Daycare</h3>
+                    <p>A full day of structured play, socialization, and nap times. Perfect for busy pet parents.</p>
+                    <div class="svc-price">Kes 1,500<span> / Day</span></div>
+                    <button class="btn-text" onclick="bookSvc('Doggie Daycare')">Book Daycare →</button>
+                </div>
+                <div class="svc-card featured">
+                    <div class="svc-icon">🌙</div>
+                    <h3>Luxury Boarding</h3>
+                    <p>Overnight stays in private, climate-controlled suites with plush bedding and calming music.</p>
+                    <div class="svc-price">Kes 3,000<span> / Night</span></div>
+                    <button class="btn-text" onclick="bookSvc('Luxury Boarding')">Book Boarding →</button>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">🛁</div>
+                    <h3>Spa & Grooming</h3>
+                    <p>Baths, haircuts, nail trimming, and deshedding treatments to keep your pup looking fresh.</p>
+                    <div class="svc-price">From Kes 2,500</div>
+                    <button class="btn-text" onclick="bookSvc('Spa & Grooming')">Book Grooming →</button>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon">🎓</div>
+                    <h3>Puppy Training</h3>
+                    <p>Basic obedience, potty training, and positive reinforcement classes for new pups.</p>
+                    <div class="svc-price">Kes 15,000<span> / Course</span></div>
+                    <button class="btn-text" onclick="bookSvc('Puppy Training')">Book Training →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Join the <span class="accent">Paw Pack?</span></h2>
+            <p>New members get their first daycare evaluation day completely free!</p>
+            <a href="#booking" class="btn btn-primary" style="margin-top:20px;background:#fff;color:var(--primary)">Claim Free Evaluation</a>
+        </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+        <div class="container"><div class="booking-wrap">
+            <div class="booking-header"><h2>Make a Reservation</h2><p>Fill out the form below and our pack leaders will confirm your booking.</p></div>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row"><div class="form-group"><label>Parent's Name</label><input type="text" name="ownerName" required></div><div class="form-group"><label>Phone Number</label><input type="tel" name="phone" required></div></div>
+                <div class="form-row"><div class="form-group"><label>Dog's Name</label><input type="text" name="dogName" required></div><div class="form-group"><label>Dog's Breed & Age</label><input type="text" name="dogBreed" placeholder="e.g. Golden Retriever, 2 yrs" required></div></div>
+                <div class="form-row"><div class="form-group"><label>Service Required</label><select name="service" id="svcSelect" required><option value="">Select Service</option><option>Doggie Daycare</option><option>Luxury Boarding</option><option>Spa & Grooming</option><option>Puppy Training</option><option>Evaluation Day</option></select></div><div class="form-group"><label>Check-in Date</label><input type="date" name="date" required></div></div>
+                <div class="form-group"><label>Special Instructions / Medical Conditions</label><textarea name="notes" rows="3" placeholder="Allergies, medication, behavior notes..."></textarea></div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+            </form>
+        </div></div>
+    </section>
+
+    <footer class="footer"><div class="container">
+        <div class="f-grid">
+            <div class="f-brand"><a href="#home" class="nav-logo" style="color:#fff">🐾 Paw<span>Pack</span></a><p style="margin-top:15px;color:rgba(255,255,255,0.8)">Premium Dog Daycare & Boarding</p></div>
+            <div class="f-contact"><h4>Visit Us</h4><p>Kitisuru Road, Nairobi</p><p>Call: 0722 000 006</p><p>Email: woof@pawpack.co.ke</p></div>
+            <div class="f-hours"><h4>Hours</h4><p>Mon-Fri: 7:00 AM - 7:00 PM</p><p>Sat-Sun: 8:00 AM - 6:00 PM</p></div>
+        </div>
+        <div class="f-bottom"><p>© 2024 PAW PACK KITISURU. All rights reserved.</p><a href="admin.html" style="color:var(--accent);font-weight:700">Staff Login</a></div>
+    </div></footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+</body></html>
